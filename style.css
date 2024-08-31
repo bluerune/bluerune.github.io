@@ -4,19 +4,33 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
+/* Quiero: Hacer que cuando la pantalla sea mas chica de lo que entren los 3 projectos solo se muestre uno y cubra la totalidad del with de la página */
+@media only screen and (max-width: 1015px) {
+    #proyects-container {
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divProyects {
+        width: 100%;
+        float: none;
+    }
+
+  }
 
 body {
     max-width: 62em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h1  {
     font-size: 60px;
     text-align: right;
-    margin: 10px;
+    margin: 1em;
 }
 
 h2 {
@@ -32,48 +46,6 @@ p, li, ul, input {
     font-size: 18px;
 }
 
-form {
-    background-color: rgb(44, 44, 44);
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    margin: 20px;
-    padding: 20px;
-}
-
-label {
-    text-align: justify;
-}
-
-form * {
-    background-color: rgb(44, 44, 44);
-    border-radius: 5px;
-    margin: 5px;
-    max-width: 400px;
-}
-
-input[type=text] {
-    background-color: rgb(20, 20, 20);
-}
-
-textarea {
-    width: 49%;
-    min-height: 100px;
-
-    background-color: rgb(20, 20, 20)
-}
-
-button {
-    background-color: rgb(45, 195, 206);
-    font-size: 24px;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-button:hover {
-    background-color: rgb(201, 40, 80);
-}
-
 .languaje {
     background-color: rgb(45, 195, 206);
     padding: 5px;
@@ -81,6 +53,13 @@ button:hover {
     margin-left: 10px;
 }
 
+#proyects-container{
+    display: flex;
+    /* Establecer la propiedad en "wrap" permite que los elementos pasen para abajo si desbordan el tamaño del contenedor */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
 .divProyects {
     background-color: rgb(45, 195, 206);
@@ -94,7 +73,7 @@ button:hover {
     background-color: rgb(45, 195, 206);
 }
 
-div.divProyects:hover, *.divProyects:hover > p, *.divProyects:hover > h3 {
+div.divProyects:hover, *.divProyects:hover > p, *.divProyects:hover > h3, .imgSocials:hover {
     background-color: rgb(201, 40, 80);
 }
 
@@ -107,14 +86,11 @@ div.divProyects:hover, *.divProyects:hover > p, *.divProyects:hover > h3 {
 
 .imgSocials {
     background-color: rgb(45, 195, 206);
-    height: 60px;
+    height: 4em;
     border-radius: 50%; 
-    margin: 10px;
+    margin: 0.5em;
 }
 
-.imgSocials:hover {
-    background-color: rgb(201, 40, 80);
-}
 
 #titulo {
     background-color: rgb(45, 195, 206);
@@ -130,14 +106,6 @@ div.divProyects:hover, *.divProyects:hover > p, *.divProyects:hover > h3 {
     padding: 10px;
 }
 
-#proyects {
-    float: none;
-    max-width: 900;
-    
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #contact {
     clear: left;
     margin: 20px;
@@ -145,6 +113,6 @@ div.divProyects:hover, *.divProyects:hover > p, *.divProyects:hover > h3 {
 }
 
 #fotoPerfil {
-    width: 180px;
+    width: 16em;
     float: left;
 }
