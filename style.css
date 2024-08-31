@@ -4,20 +4,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-/* Quiero: Hacer que cuando la pantalla sea mas chica de lo que entren los 3 projectos solo se muestre uno y cubra la totalidad del with de la página */
-@media only screen and (max-width: 1015px) {
-    #proyects-container {
-        
-        align-items: center;
-        justify-content: center;
-    }
-
-    .divProyects {
-        width: 100%;
-        float: none;
-    }
-
-  }
 
 body {
     max-width: 62em;
