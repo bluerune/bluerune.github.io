@@ -61,6 +61,7 @@ p, li, ul, input {
 
 div.divProyects:hover, *.divProyects:hover > p, *.divProyects:hover > h3, .imgSocials:hover {
     background-color: rgb(201, 40, 80);
+    transition: 0.3s;
 }
 
 .imgProyects {
