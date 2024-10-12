@@ -108,20 +108,44 @@ p, li, ul, input, a {
     opacity: 50%;
 }
 
-.skillsCards {
-    margin: 0.5em;
-    padding: 0.5em;
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 5%;
-}
+
 
 .gameboybuttons {
     opacity: 30%;
     height: 4em;
     margin: 1em;
 }
+
+
+#infoContainer{
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutme {
+    float: inline-start;
+    max-width: 400px;
+}
+
+#skills {
+    
+    max-width: 300px;
+}
+
+.skillsCards {
+
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+
 
 /* ------ Animaciones -------- */
 div.divProyects:hover, *.divProyects:hover > p, *.divProyects:hover > h3, .imgSocials:hover {
