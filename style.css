@@ -27,13 +27,14 @@ p, li, ul, input, a {
     font-size: 18px;
 }
 
+/* ------ Game cards -------- */
+
 #proyects-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-
 .divProyects {
     background-color: rgb(45, 195, 206);
     color: rgb(20, 20, 20);
@@ -47,9 +48,6 @@ p, li, ul, input, a {
 .divProyects p, .divProyects h3  {
     background-color: rgb(45, 195, 206);
 }
-
-
-
 .imgProyects {
     background-color: rgb(20, 20, 20);
     border-top-color: rgb(20, 20, 20);
@@ -60,9 +58,9 @@ p, li, ul, input, a {
     border-width: 4px;
     height: 200px;
     border-radius: 10px;
-
 }
 
+/* ------ Contact me  -------- */
 .imgSocials {
     background-color: rgb(45, 195, 206);
     height: 4em;
@@ -70,30 +68,29 @@ p, li, ul, input, a {
     margin: 0.5em;
     box-shadow: 5px 5px 5px rgb(0, 0, 0)
 }
-
-
-#titulo {
-    background-image:  linear-gradient(to bottom, rgba(201, 40, 80, 0), rgba(45, 195, 206, 1)), url("/img/bgcheckedboard.png");
-    background-size: auto;
-    padding: 10px;
-    min-height: 300px;
-    color:rgb(20, 20, 20);
-    top: 0;
-}
-
-#titulo > h2 {
-    color:rgb(20, 20, 20);
-}
-
 #contact {
     clear: left;
     margin: 20px;
     padding: 20px;
 }
 
+/* ------ Header -------- */
+#titulo {
+    background-image:  linear-gradient(to bottom, rgba(201, 40, 80, 0), rgba(45, 195, 206, 1)), url("/img/bgcheckedboard.png");
+    background-size: auto;
+    padding: 10px;
+    min-height: 400px;
+    color:rgb(20, 20, 20);
+    top: 0;
+}
+#titulo > h2 {
+    color:rgb(20, 20, 20);
+}
+
+
+
 #fotoPerfil {
     width: 16em;
-
     border-radius: 50%;
     background-color: rgb(20, 20, 20);
     box-shadow: 5px 5px 5px rgb(0, 0, 0)
@@ -108,14 +105,11 @@ p, li, ul, input, a {
     opacity: 50%;
 }
 
-
-
 .gameboybuttons {
     opacity: 30%;
     height: 4em;
     margin: 1em;
 }
-
 
 #infoContainer{
     padding: 1em;
@@ -136,7 +130,6 @@ p, li, ul, input, a {
 }
 
 .skillsCards {
-
     margin: 0.5em;
     padding: 0.5em;
     border: 2px;
@@ -147,7 +140,7 @@ p, li, ul, input, a {
 
 
 
-/* ------ Animaciones -------- */
+/* ------ Animations and effects -------- */
 div.divProyects:hover, *.divProyects:hover > p, *.divProyects:hover > h3, .imgSocials:hover {
     background-color: rgb(201, 40, 80);
     transition: 0.3s;
@@ -180,6 +173,7 @@ div.divProyects:hover {
 
 .grow-shrink-disapear {
 	animation-name: grow-shrink-disapear;
+    animation: linear;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
@@ -190,6 +184,18 @@ div.divProyects:hover {
     70% { transform: scale(1); }
     80% { transform: scale(0.8); }
 	100% { transform: scale(0); }
+}
+
+.rotate-circle {
+    animation-name: rotate-circle;
+
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-circle {
+    0% { transform: rotate(-360deg);}
+
 }
 
 #sparkle1 {
@@ -238,4 +244,84 @@ div.divProyects:hover {
     right: 12%;
 }
 
-/* ------ Animaciones -------- */
+/* ------ Tabs -------- */
+
+#tabs-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 64px;
+    padding-left: 8px;
+}
+.tab button {
+    font-size: large;
+    color: aliceblue;
+    float: left;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+    
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+    height: 40px;
+    margin-top: 10px;
+    
+    padding: 0.5em;
+    transition: 0.3s;
+    
+}
+.tab button:hover {
+    background-color: rgb(45, 195, 206);
+    
+}
+.tab button.active {
+    background-color: rgb(201, 40, 80);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(201, 40, 80);
+    height: 54px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tabcontent {
+    padding: 6px 12px;
+    min-height: 240px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.tabsimage {
+    border: 1px solid #ccc;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 6px;
+    padding-left: 18px;
+    float: inline-end;
+    margin: 1em;
+    width: 20px;
+    cursor: pointer;
+}
+#logoTab {
+    padding: 30px 0;
+    width: 130px;
+    margin: auto;
+}
+
+/* ------ Media -------- */
+
+@media (max-width: 680px) {
+    #tabs-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        min-width: 400px;
+    }
+}
