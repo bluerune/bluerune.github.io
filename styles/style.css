@@ -271,11 +271,11 @@ p, li, ul, input, a {
 }
 
 /* ------ Media -------- */
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     #tabs-container {
         margin-left: 2%;
         margin-right: 2%;
-        min-width: 340px;
+        max-width: 340px;
     }
     .tabcontent {
         min-height: 300px;
@@ -288,22 +288,6 @@ p, li, ul, input, a {
     }
 }
 
-@media (min-width: 680px) {
-    #tabs-container {
-        margin-left: 2%;
-        margin-right: 2%;
-        min-width: 370px;
-    }
-    .tabcontent {
-        min-height: 300px;
-    }
-    .tab button {
-        font-size: small;
-    }
-    .imgSocials{
-        height: 3em;
-    }
-}
 
 @media (min-width: 1080px) {
     #tabs-container {
