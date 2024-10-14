@@ -35,7 +35,6 @@ p, li, ul, input, a {
 .titleBand {
     background-color: rgb(201, 40, 80);
     margin-top: 3em;
-   
     width: 100%;
     padding: 1px;
 }
@@ -51,7 +50,6 @@ p, li, ul, input, a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
     margin-bottom: 6em;
 }
 .divProyects {
@@ -255,24 +253,55 @@ p, li, ul, input, a {
     width: 20px;
     cursor: pointer;
 }
+
+#tabsWebIcon {
+    float: left;
+    width: 30px;
+    padding-left: 0px;
+    margin: 0.6em;
+    border: none;
+    cursor: auto;
+}
+
 #logoTab {
     padding: 42px 0;
     width: 130px;
     margin: auto;
+    
 }
 
-
-
 /* ------ Media -------- */
-
-@media (max-width: 680px) {
+@media (max-width: 360px) {
     #tabs-container {
-        margin-left: 5%;
-        margin-right: 5%;
-        min-width: 400px;
+        margin-left: 2%;
+        margin-right: 2%;
+        min-width: 340px;
     }
     .tabcontent {
         min-height: 300px;
+    }
+    .tab button {
+        font-size: 10px;
+    }
+    .imgSocials{
+        height: 2.4em;
+    }
+}
+
+@media (min-width: 680px) {
+    #tabs-container {
+        margin-left: 2%;
+        margin-right: 2%;
+        min-width: 370px;
+    }
+    .tabcontent {
+        min-height: 300px;
+    }
+    .tab button {
+        font-size: small;
+    }
+    .imgSocials{
+        height: 3em;
     }
 }
 

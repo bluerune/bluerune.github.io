@@ -31,7 +31,7 @@ div.divProyects:hover {
 
 .grow-shrink-disapear {
 	animation-name: grow-shrink-disapear;
-    animation: linear;
+    
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
@@ -46,14 +46,12 @@ div.divProyects:hover {
 
 .rotate-circle {
     animation-name: rotate-circle;
-
     animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 @keyframes rotate-circle {
     0% { transform: rotate(-360deg);}
-
 }
 
 #sparkle1 {
