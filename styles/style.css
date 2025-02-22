@@ -73,10 +73,10 @@ footer {
     color: rgb(20, 20, 20);
     margin: 15px;
     padding-top: 20px;
-    border-radius: 10px;
+    border-radius: 25px;
     width: 300px;
     float: inline-start;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0)
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 .divGames p, .divGames h3  {
     background-color: rgb(45, 195, 206);
@@ -89,8 +89,11 @@ footer {
     border-bottom-color: rgb(233, 233, 233);
     border-style: solid;
     border-width: 4px;
-    height: 200px;
-    border-radius: 10px;
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 15px;
 }
 
 /* ------ Contact me  -------- */
