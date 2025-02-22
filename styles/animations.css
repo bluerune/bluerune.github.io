@@ -1,0 +1,113 @@
+/* ------ Animations and effects -------- */
+div.divGames:hover, *.divGames:hover > p, *.divGames:hover > h3, .imgSocials:hover {
+    background-color: rgb(201, 40, 80);
+    transition: 0.3s;
+    color: rgb(233, 233, 233);
+    
+}
+
+div.divGames:hover {
+    transform: rotate(1deg);
+}
+
+#logo:hover {
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+.grow-shrink {
+	animation-name: grow-shrink;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+			
+@keyframes grow-shrink {
+	0% { transform:  scale(1); }
+    50% { transform: scale(0.8); }
+    70% { transform: scale(0.9); }
+    80% { transform: scale(0.8); }
+	100% { transform: scale(1); }
+}
+
+.grow-shrink-disapear {
+	animation-name: grow-shrink-disapear;
+    
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+			
+@keyframes grow-shrink-disapear {
+	0% { transform:  scale(0); }
+    50% { transform: scale(0.8); }
+    70% { transform: scale(1); }
+    80% { transform: scale(0.8); }
+	100% { transform: scale(0); }
+}
+
+.rotate-circle {
+    animation-name: rotate-circle;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-circle {
+    0% { transform: rotate(-360deg);}
+}
+
+#sparkle1 {
+    width: 2em; 
+    position: fixed;
+    float: left;
+    bottom: 10%;
+    right: 10%;
+}
+
+#sparkle2 {
+    width: 2em; 
+    position: fixed;
+    float: left;
+    bottom: 20%;
+    left: 8%;
+}
+
+#sparkle3 {
+    width: 1em; 
+    position: fixed;
+    float: left;
+    bottom: 15%;
+    right: 8%;
+}
+
+#sparkle4 {
+    width: 0.5em; 
+    position: fixed;
+    float: left;
+    bottom: 18%;
+    left: 11%;
+}
+#sparkle5 {
+    width: 0.5em; 
+    position: fixed;
+    float: left;
+    bottom: 20%;
+    right: 6%;
+}
+#sparkle6 {
+    width: 0.5em; 
+    position: fixed;
+    float: left;
+    bottom: 14%;
+    right: 12%;
+}
+
+.fade-in-fade-out {
+    animation-name: fade-in-fade-out;
+	animation-duration: 2s;
+
+}
+
+@keyframes fade-in-fade-out {
+    0% {opacity: 0%;}
+    20% {opacity: 100%;}
+    100% {opacity: 0%;}
+}

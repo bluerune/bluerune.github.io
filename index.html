@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bruna Sosa | Front-end web developer | 2D Artist</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/animations.css">
+        <link rel="stylesheet" href="styles/alerts.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
+        <meta name="description" content="portfolio">
+        <meta name="author" content="Bruna Sosa">
+        <meta name="keywords" content="Portfolio, Front end developer, open for work">
+    </head>
+
+    <!-- Imagenes flotantes -->
+        <img src="img/icons/sparkle1.png" alt="" class="grow-shrink" id="sparkle1">
+        <img src="img/icons/sparkle1.png" alt="" class="grow-shrink" id="sparkle2">
+        <img src="img/icons/sparkle2.png" alt="" class="grow-shrink" id="sparkle3">
+        <img src="img/icons/sparkle2.png" alt="" class="grow-shrink-disapear" id="sparkle4">
+        <img src="img/icons/sparkle2.png" alt="" class="grow-shrink-disapear" id="sparkle5">
+        <img src="img/icons/sparkle2.png" alt="" class="grow-shrink-disapear" id="sparkle6">
+        <a href="#">
+        <img src="img/icons/firmapngdarm.png" alt="" id="logo"></a>
+    <!--  -->
+
+    <body>
+        <div id="titulo">
+            <h1>Hello, I'm Bruna Sosa!</h1>
+            <h2>I'm a 2D game artist, illustrator and front-end web developer</h2>
+        </div>
+
+        <div id="infoContainer">
+            <div id="aboutme">
+                <h2>About me</h2>
+                <img id="fotoPerfil" src="img/IMG_20230104_151050.png" alt="Profile Photo of me">
+                <p>My name is Bruna and I go by BlueRune on social media. I'm from Uruguay. I love video games and I'm currently learning Front-end Web development. </p>
+                <p>I try to incorporate my passion for art and design in my projects, both games and web. I love the problem solving factor in both areas!</p>
+                    
+            </div>
+
+            
+            <div id="skills">
+                <h2>My skills</h2>
+                <div id="skillCards">
+                    <div class="skillsCards">HTML</div>
+                    <div class="skillsCards">CSS</div>
+                    <div class="skillsCards">Javascript</div>
+                    <div class="skillsCards">C#</div>
+                    <div class="skillsCards">GitHub Repositories</div>
+                    <div class="skillsCards">Unity</div>
+                    <div class="skillsCards">Bootstrap</div>
+                    <div class="skillsCards">Figma</div> 
+                    <div class="skillsCards">Adobe Photoshop and Illustrator</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="titleBand"><h2>Check some of my projects!</h2></div>
+        <h2>Web pages</h2>
+        <!-- Tab links -->
+        <div id="tabs-container">
+            <div class="tab">
+                <img src="img/icons/icon_web.png" alt="" id="tabsWebIcon" class="tabsimage">
+                <img class="tabsimage" src="img/icons/xbutton.png" alt="" onclick="openTab(event, 'default')" id="defaultOpen">
+                
+                <button class="tablinks" onclick="openTab(event, 'NASAsearch')">NASA images</button>
+                <!-- <button class="tablinks" onclick="openTab(event, 'Japflix')">Japflix</button> -->
+                <!-- <button class="tablinks" onclick="openTab(event, 'imgGalery')">Galery</button> -->
+                <button class="tablinks" onclick="openTab(event, 'ecommerce')">eCommerce</button>
+            </div>
+            
+            <!-- Tab content -->
+            <div id="default" class="tabcontent">
+                <img src="img/blueruneart.png" id="logoTab" alt="">
+            </div>
+
+            <div id="imgGalery" class="tabcontent">
+                <h3>Galery</h3>
+                <p>Check my art portfolio!</p>
+            </div>
+            
+            <div id="Japflix" class="tabcontent">
+                <a href="https://bluerune.github.io/japflix/" target="_blank"><img src="https://bluerune.github.io/japflix/img/japflix.png" alt=""></a>
+                
+                <p>Search movies by title or description</p>
+                <p>Made for my foundational course at <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jóvenes a programar</a></p>
+            </div>
+
+            <div id="NASAsearch" class="tabcontent">
+                <div class="tabsUrlBar">
+                    <a href="https://bluerune.github.io/buscador-galaxias/" target="_blank"><h3>NASA Image search</h3></a>
+                </div>
+                
+                <p>Search images and archives from the NASA apis</p>
+                <p>Made for my foundational course at <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jóvenes a programar</a></p>
+            </div>
+
+            <div id="ecommerce" class="tabcontent">
+                <div class="tabsUrlBar">
+                    <a href="https://cpunalesblanc.github.io/Entrega/" target="_blank"><h3>eComercio</h3></a>
+                </div>
+
+                <img src="img/eCommerce.PNG" alt="" width="300px">
+                
+                <p>Mockup e-Commerce site with multiple search funcionalities</p>
+                <p>Made for my foundational course at <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jóvenes a programar</a></p>
+            </div>
+            
+        </div>
+        <h2>My games</h2>
+
+        <div id="games-container" class="grid-container">
+            <a href="https://bluerune.itch.io/dollmaker" target=”_blank”><div class="divGames" class="grid-item">
+                <img class="imgGames"src="https://img.itch.zone/aW1nLzEyNTY0NTM0LnBuZw==/315x250%23c/N0cOJj.png" alt="Doll Maker: By BlueRune">
+                <h3>Doll Maker: by BlueRune</h3>
+                <p>My dress up game</p>
+                <!-- Imagen de gameboy, agregar despues con js -->
+                <img src="img/icons/gameboybuttons.png" alt="" class="gameboybuttons">
+            </div></a>
+
+            <a href="https://texadev.itch.io/milkshake" target="_blank"><div class="divGames" class="grid-item">
+                <img class="imgGames" src="https://img.itch.zone/aW1nLzE0ODM5OTU2LnBuZw==/315x250%23c/4ENddm.png" alt="Milkshake">
+                <h3>Milkshake</h3>
+                <p>Fighting game made for a GameJam</p>
+                <!-- Imagen de gameboy, agregar despues con js -->
+                <img src="img/icons/gameboybuttons.png" alt="" class="gameboybuttons">
+            </div></a>
+
+            <a href="https://texadev.itch.io/to-the-roots" target="_blank"><div class="divGames" class="grid-item">
+                <img class="imgGames" src="https://img.itch.zone/aW1nLzExMjUwODczLnBuZw==/315x250%23c/5C3gzO.png" alt="To the roots">
+                <h3>To the Roots</h3>
+                <p>Shooting game made for a GameJam</p>
+                <!-- Imagen de gameboy, agregar despues con js -->
+                <img src="img/icons/gameboybuttons.png" alt="" class="gameboybuttons">
+            </div></a>
+        </div>
+
+        <div class="titleBand"><h2>Contact me</h2></div>
+        <div id="contact">
+            
+            
+            <span id="alertCopied">Copied!</span>
+            <div id="email"><span id="emailSpan" onclick="copyToClipboard()"><img src="/img/icons/icon_mail.png" alt=""><p>bluerune9@gmail.com</p></span></div>
+
+            <a href="https://www.linkedin.com/in/bruna-sosa/" target=”_blank”><img class="imgSocials" src="img/icons/socialslogos_linkedin.png" alt="My Linkedin"></a>
+            <a href="https://www.artstation.com/bluerune9" target="_blank"><img class="imgSocials" src="img/icons/socialslogos_artstation.png" alt="My artist portfolio"></a>
+            <a href="https://bluerune.itch.io/" target="_blank"><img class="imgSocials" src="img/icons/socialslogos_itchio.png" alt="My itch.io page"></a>
+            
+            
+        </div>
+
+
+        <footer>Made by Bruna Sosa</footer>
+
+        <script src="scripts/copytocplipsboard.js"></script>
+        <script src="scripts/tabsprojects.js"></script>
+    </body>
+
+</html>

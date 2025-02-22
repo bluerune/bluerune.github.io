@@ -1,0 +1,9 @@
+#alertCopied {
+    background-color: rgb(45, 195, 206);
+    margin-left: 14em;
+    margin-top: 0px;
+    border-radius: 15px;
+    padding: 0.5em;
+    position:relative;
+    opacity: 0%;
+}

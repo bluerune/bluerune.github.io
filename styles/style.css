@@ -1,0 +1,329 @@
+body {
+    background-color: rgb(20, 20, 20);
+    color: rgb(233, 233, 233);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: rgb(233, 233, 233);
+}
+
+h1  {
+    font-size: 60px;
+    margin: 1em;
+}
+
+h2 {
+    color: rgb(45, 195, 206);
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p, li, ul, input, a {
+    font-size: 18px;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    opacity: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: rgb(20, 20, 20);
+border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    color: rgb(122, 122, 122);
+    padding-top: 2em;
+    height: 3em;
+}
+/* ------ Title bands -------- */
+
+.titleBand {
+    background-color: rgb(201, 40, 80);
+    margin-top: 3em;
+    width: 100%;
+    padding: 1px;
+}
+.titleBand h2 {
+    background-color: rgb(201, 40, 80);
+    color: #ffffff;
+}
+
+/* ------ Game cards -------- */
+
+#games-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6em;
+}
+.divGames {
+    background-color: rgb(45, 195, 206);
+    color: rgb(20, 20, 20);
+    margin: 15px;
+    padding-top: 20px;
+    border-radius: 10px;
+    width: 300px;
+    float: inline-start;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0)
+}
+.divGames p, .divGames h3  {
+    background-color: rgb(45, 195, 206);
+}
+.imgGames {
+    background-color: rgb(20, 20, 20);
+    border-top-color: rgb(20, 20, 20);
+    border-left-color: rgb(20, 20, 20);
+    border-right-color: rgb(233, 233, 233);
+    border-bottom-color: rgb(233, 233, 233);
+    border-style: solid;
+    border-width: 4px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* ------ Contact me  -------- */
+.imgSocials {
+    background-color: rgb(45, 195, 206);
+    height: 4em;
+    border-radius: 50%; 
+    margin: 0.5em;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0)
+}
+#contact {
+    clear: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+#email {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+#email span {
+    border: 1px solid #ccc;
+    padding-left: 0.5em;
+    padding-right: 0.65em;
+    border-radius: 15px;
+    height: 2.5em;
+    cursor: pointer;
+}
+
+#email span p {
+    float: inline-end;
+    margin: auto;
+    padding: 8px 10px 28px 10px;
+}
+
+#email img {
+    border-right: 1px solid #ccc;
+    margin-top: 0.4em;
+    padding: 0.2em 0.6em 0.2em 0.2em;
+    width: 20px;
+    height: 20px;
+}
+
+/* ------ Header -------- */
+#titulo {
+    background-image:  linear-gradient(to bottom, rgba(201, 40, 80, 0), rgba(45, 195, 206, 1)), url("/img/backgrounds/bgcheckedboard.png");
+    background-size: auto;
+    padding: 10px;
+    min-height: 400px;
+    color:rgb(20, 20, 20);
+    top: 0;
+}
+#titulo > h2 {
+    color:rgb(20, 20, 20);
+}
+
+#fotoPerfil {
+    width: 16em;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0)
+}
+
+#logo {
+    width: 4em; 
+    position: fixed;
+    float: left;
+    top: 2%;
+    left: 2%;
+    opacity: 50%;
+}
+
+.gameboybuttons {
+    opacity: 30%;
+    height: 4em;
+    margin: 1em;
+}
+
+#infoContainer{
+    padding: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutme {
+    float: inline-start;
+    max-width: 400px;
+}
+
+#skills {
+
+    max-width: 300px;
+}
+
+#skillCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsCards {
+    float: inline-end;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+/* ------ Tabs -------- */
+
+#tabs-container {
+    margin-left: 15%;
+    margin-right: 15%;
+
+    align-items: center;
+    justify-content: center;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 64px;
+    padding-left: 8px;
+}
+.tab button {
+    font-size: large;
+    color: aliceblue;
+    float: left;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0.5em;
+    transition: 0.3s;
+}
+.tab button:hover {
+    background-color: rgb(201, 40, 80);
+    
+}
+.tab button.active {
+    background-color: rgb(45, 195, 206);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: rgb(20, 20, 20);
+    border: 1px solid rgb(45, 195, 206);
+    height: 54px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tabcontent {
+    margin: 0px;
+    min-height: 350px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.tabsimage {
+    border: 1px solid #ccc;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 6px;
+    padding-left: 18px;
+    float: inline-end;
+    margin: 1em;
+    width: 20px;
+    cursor: pointer;
+}
+
+#tabsWebIcon {
+    float: left;
+    width: 30px;
+    padding-left: 0px;
+    margin: 0.6em;
+    border: none;
+    cursor: auto;
+}
+
+#logoTab {
+    padding: 90px 0;
+    width: 130px;
+    margin: auto;
+    
+}
+
+.tabsUrlBar {
+    background-color: rgb(44, 44, 44);
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 1em;
+    border-radius: 15px;
+}
+
+/* ------ Media -------- */
+@media (max-width: 500px) {
+    #tabs-container {
+        max-width: 340px;
+    }
+    .tabcontent {
+        min-height: 300px;
+    }
+    .tab button {
+        font-size: 10px;
+    }
+    .imgSocials{
+        height: 2.4em;
+    }
+}
+
+
+@media (min-width: 1080px) {
+    #tabs-container {
+        margin-left: 25%;
+        margin-right: 25%;
+        min-width: 400px;
+    }
+}
